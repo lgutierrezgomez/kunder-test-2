@@ -25,16 +25,22 @@
   text-decoration: none;
   flex-grow: 1;
   text-align: center;
-  position: relative;
+  position: absolute;
 }
 
-h2,h3 {
+h2,h4 {
   color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+h3 {
+  color: white;
   text-decoration: none;
   text-align: center;
 }
 
 .flex-container > div > img {
   width: auto;
-  height: 70%;
+  height: 100%;
 }

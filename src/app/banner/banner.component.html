@@ -2,7 +2,7 @@
   <div [ngSwitch]="types">
     <div *ngSwitchCase="'plan'" class = "flex-container" [ngStyle]="{'background-image': 'url('+ Product['backgroundImg'] + ')'}">
       <div>
-        <h1 class="col-12">{{Product['productDescription']}}</h1>
+        <h3 class="col-12">{{Product['productDescription']}}</h3>
       </div>
       <div></div>
       <div>
@@ -16,7 +16,7 @@
       <div></div>
       <div>
         <h2>{{Product['productName']}}</h2>
-        <h3>{{Product['productDescription']}}</h3>
+        <h4>{{Product['productDescription']}}</h4>
       </div> 
     </div>
   </div>
