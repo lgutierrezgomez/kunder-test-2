@@ -10,15 +10,13 @@ export class RestService {
 
   constructor(private http: HttpClient) { }
 
-  const endpoint = 'https://hack.kunderlabs.com/exam/telecom/api/products/new';
-
   private extractData(res: Response) {
     let body = res;
     return body || { };
   }s
 
   getProducts(): Observable<any> {
-    return this.http.get(endpoint).pipe(
+    return this.http.get('https://hack.kunderlabs.com/exam/telecom/api/products/new').pipe(
     map(this.extractData));
   }
 
